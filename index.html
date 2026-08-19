@@ -6,37 +6,413 @@
 
     <meta
         name="description"
-        content="Discover The Velvet Roww."
+        content="The Velvet Row — Elevated streetwear and timeless urban apparel in ECIL, Hyderabad."
     >
 
-    <title>The Velvet Roww | Official Website</title>
+    <title>The Velvet Row | Elevated Streetwear</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
-    <header>
-        <nav>
-            <a href="#" class="logo">THE VELVET ROWW</a>
+    <!-- Announcement -->
+    <div class="announcement">
+        <p>ECIL, HYDERABAD <span></span> ELEVATED EVERYDAY STREETWEAR</p>
+    </div>
+
+
+    <!-- Navigation -->
+    <header class="header">
+        <nav class="navbar container">
+
+            <a href="#home" class="brand">
+                <span>THE</span>
+                VELVET
+                <span>ROW</span>
+            </a>
+
+            <button
+                class="menu-button"
+                id="menuButton"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+            >
+                <span></span>
+                <span></span>
+            </button>
+
+            <div class="nav-links" id="navLinks">
+                <a href="#about">About</a>
+                <a href="#collection">Collection</a>
+                <a href="#store">Visit Us</a>
+
+                <a
+                    href="https://www.instagram.com/thevelvetroww/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="nav-instagram"
+                >
+                    Instagram ↗
+                </a>
+            </div>
+
         </nav>
     </header>
 
+
     <main>
-        <section class="hero">
-            <h1>Discover The Velvet Roww</h1>
-            <p>A curated experience, crafted with style.</p>
 
-            <a href="#contact" class="btn">
-                Get in Touch
-            </a>
+        <!-- Hero -->
+        <section class="hero" id="home">
+
+            <div class="hero-content container">
+
+                <div class="hero-top">
+                    <p class="eyebrow">01 — STREETWEAR, REFINED</p>
+
+                    <p class="hero-location">
+                        EST. IN<br>
+                        HYDERABAD
+                    </p>
+                </div>
+
+                <div class="hero-title-wrap">
+                    <h1>
+                        <span>WEAR</span>
+                        <em>your</em>
+                        <span>ATTITUDE.</span>
+                    </h1>
+                </div>
+
+                <div class="hero-bottom">
+
+                    <p class="hero-copy">
+                        Elevated essentials and timeless urban pieces
+                        made for people who refuse to blend in.
+                    </p>
+
+                    <a href="#collection" class="circle-link">
+                        <span>EXPLORE<br>THE DROP</span>
+                        <span class="arrow">↓</span>
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="scroll-indicator">
+                <span>SCROLL TO EXPLORE</span>
+                <i></i>
+            </div>
+
         </section>
 
-        <section id="contact">
-            <h2>Contact Us</h2>
+
+        <!-- About -->
+        <section class="about section-padding" id="about">
+
+            <div class="container about-grid">
+
+                <p class="section-number">02 / ABOUT THE ROW</p>
+
+                <div class="about-content">
+
+                    <h2>
+                        Built for the
+                        <em>everyday.</em>
+                        Designed to
+                        stand apart.
+                    </h2>
+
+                    <div class="about-text">
+
+                        <p>
+                            The Velvet Row is an elevated streetwear store
+                            in ECIL, Hyderabad. We curate premium-quality
+                            urban apparel that balances comfort, character
+                            and timeless style.
+                        </p>
+
+                        <p>
+                            From statement jackets to everyday essentials,
+                            every piece is selected for people who want their
+                            wardrobe to say something without trying too hard.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
         </section>
+
+
+        <!-- Collection -->
+        <section class="collection section-padding" id="collection">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <div>
+                        <p class="section-number">03 / THE COLLECTION</p>
+
+                        <h2>
+                            Pieces with
+                            <em>presence.</em>
+                        </h2>
+                    </div>
+
+                    <p>
+                        Discover our latest selection in-store
+                        and follow us for new arrivals.
+                    </p>
+
+                </div>
+
+
+                <div class="collection-grid">
+
+                    <article class="collection-card card-large">
+                        <div class="card-image image-one">
+                            <span class="card-number">01</span>
+                        </div>
+
+                        <div class="card-info">
+                            <h3>Jackets</h3>
+                            <p>Layers with character.</p>
+                        </div>
+                    </article>
+
+
+                    <article class="collection-card">
+                        <div class="card-image image-two">
+                            <span class="card-number">02</span>
+                        </div>
+
+                        <div class="card-info">
+                            <h3>Hoodies</h3>
+                            <p>Comfort, elevated.</p>
+                        </div>
+                    </article>
+
+
+                    <article class="collection-card">
+                        <div class="card-image image-three">
+                            <span class="card-number">03</span>
+                        </div>
+
+                        <div class="card-info">
+                            <h3>Shirts</h3>
+                            <p>Made for every setting.</p>
+                        </div>
+                    </article>
+
+
+                    <article class="collection-card card-wide">
+                        <div class="card-image image-four">
+                            <span class="card-number">04</span>
+                        </div>
+
+                        <div class="card-info">
+                            <h3>Sweatshirts & Essentials</h3>
+                            <p>The pieces you'll keep reaching for.</p>
+                        </div>
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Statement -->
+        <section class="statement">
+
+            <div class="statement-inner container">
+
+                <p>LESS NOISE.</p>
+
+                <h2>
+                    MORE
+                    <em>you.</em>
+                </h2>
+
+                <p>
+                    YOUR STYLE DOESN'T NEED AN INTRODUCTION.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- Instagram -->
+        <section class="social-section section-padding">
+
+            <div class="container social-grid">
+
+                <div>
+
+                    <p class="section-number">04 / STAY IN THE LOOP</p>
+
+                    <h2>
+                        The latest
+                        <em>drop.</em>
+                    </h2>
+
+                </div>
+
+                <div class="social-content">
+
+                    <p>
+                        New arrivals, fresh fits and everything happening
+                        at The Velvet Row. Follow along and never miss
+                        what's next.
+                    </p>
+
+                    <a
+                        href="https://www.instagram.com/thevelvetroww/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="text-link"
+                    >
+                        @THEVELVETROWW <span>↗</span>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Store -->
+        <section class="store" id="store">
+
+            <div class="container store-grid">
+
+                <div class="store-heading">
+
+                    <p class="section-number">05 / VISIT THE STORE</p>
+
+                    <h2>
+                        Come find
+                        <em>your fit.</em>
+                    </h2>
+
+                </div>
+
+
+                <div class="store-details">
+
+                    <div class="detail-row">
+                        <span>LOCATION</span>
+
+                        <p>
+                            ECIL<br>
+                            Hyderabad, Telangana
+                        </p>
+                    </div>
+
+
+                    <div class="detail-row">
+                        <span>CALL US</span>
+
+                        <a href="tel:+917207298136">
+                            +91 72072 98136
+                        </a>
+                    </div>
+
+
+                    <div class="detail-row">
+                        <span>FOLLOW</span>
+
+                        <a
+                            href="https://www.instagram.com/thevelvetroww/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Instagram ↗
+                        </a>
+                    </div>
+
+
+                    <a
+                        href="https://wa.me/917207298136"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="contact-button"
+                    >
+                        <span>START A CONVERSATION</span>
+                        <strong>↗</strong>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
     </main>
 
+
+    <!-- Footer -->
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="footer-top">
+
+                <a href="#home" class="footer-brand">
+                    THE VELVET ROW
+                </a>
+
+                <p>
+                    ELEVATED STREETWEAR.<br>
+                    HYDERABAD, INDIA.
+                </p>
+
+            </div>
+
+            <div class="footer-bottom">
+
+                <p>© <span id="year"></span> THE VELVET ROW. ALL RIGHTS RESERVED.</p>
+
+                <a href="#home">BACK TO TOP ↑</a>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- Floating WhatsApp Button -->
+    <a
+        href="https://wa.me/917207298136"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="whatsapp-button"
+        aria-label="Chat with The Velvet Row on WhatsApp"
+    >
+        <span>WHATSAPP</span>
+        <strong>↗</strong>
+    </a>
+
+
     <script src="script.js"></script>
+
 </body>
 </html>
