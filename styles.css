@@ -857,3 +857,109 @@ img {
         gap: 5px;
     }
 }
+
+/* =========================
+   SCROLL ANIMATIONS
+========================= */
+
+
+/* Initial hidden state */
+
+.scroll-reveal {
+    opacity: 0;
+    transform: translateY(60px);
+    transition:
+        opacity 0.9s ease,
+        transform 0.9s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+
+/* Visible state */
+
+.scroll-reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* Collection cards */
+
+.collection-card {
+    transition:
+        opacity 0.9s ease,
+        transform 0.9s cubic-bezier(0.22, 1, 0.36, 1),
+        filter 0.4s ease;
+}
+
+
+/* Image hover effect */
+
+.card-image {
+    transition:
+        transform 0.8s cubic-bezier(0.22, 1, 0.36, 1),
+        filter 0.6s ease;
+}
+
+.collection-card:hover .card-image {
+    transform: scale(1.025);
+    filter: brightness(0.88);
+}
+
+
+/* Text link animation */
+
+.text-link {
+    position: relative;
+    transition:
+        padding-left 0.3s ease,
+        color 0.3s ease;
+}
+
+.text-link:hover {
+    padding-left: 10px;
+}
+
+
+/* Store rows */
+
+.detail-row {
+    transition:
+        padding-left 0.35s ease,
+        background 0.35s ease;
+}
+
+.detail-row:hover {
+    padding-left: 12px;
+}
+
+
+/* Statement */
+
+.statement-inner {
+    transition: transform 0.8s ease;
+}
+
+.statement-inner.visible {
+    transform: translateY(0);
+}
+
+
+/* =========================
+   REDUCED MOTION
+========================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+
+}
